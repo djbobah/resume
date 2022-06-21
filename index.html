@@ -6,64 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Это сайт - резюме web-разработчика" />
     <meta name="keywords" content="HTML,CSS, Javascript,ReactJS,PHP," />
+    <link rel="stylesheet" href="styles.css" />
     <title>Resume</title>
   </head>
   <body>
-    <img src="./images/KVV.jpg" alt="Фото Кирпичев В.В." width="150px" />
-    <h1>Владимир Кирпичев</h1>
-    <p>
-      Я <strong>junior-frontend</strong> разработчик. Есть опыт разработки
-      корпоративного web-портала.
-    </p>
-    <p>
-      В своей работе использую <em>HTML,JavsScript, PHP, MySQL.</em> В данный
-      момент осваиваю React по курсу Владилена Минина junior-frontend developer
-    </p>
-    <h3>Список социальных сетей</h3>
-    <p>
-      <a href="https://t.me/djBOBAH" target="_blank" rel="noopener noreferrer"
-        >Telegramm</a
-      >
-      |
-      <a
-        href="https://vk.com/id6430817"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Вконтакте</a
-      >
-    </p>
-    <hr />
-    <h3>Мои хобби</h3>
-    <ol>
-      <li>Путешествия</li>
-      <li>Программирование</li>
-      <li>Строительство</li>
-    </ol>
-    <h3>Опыт работы</h3>
-    <table>
-      <thead>
-        <th>Название организации</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </thead>
+    <div class="container">
+      <div class="info">
+        <img src="./images/KVV.jpg" alt="Фото Кирпичев В.В." class="avatar" />
+        <div class="info-text">
+          <h1>Владимир Кирпичев</h1>
+          <p>
+            Я <strong>junior-frontend</strong> разработчик. Есть опыт разработки
+            корпоративного web-портала.
+          </p>
+          <p>
+            В своей работе использую <em>HTML,JavsScript, PHP, MySQL.</em> В
+            данный момент осваиваю React по курсу Владилена Минина
+            junior-frontend developer
+          </p>
+          <h3>Список социальных сетей</h3>
+          <p>
+            <a
+              href="https://t.me/djBOBAH"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Telegramm</a
+            >
+            |
+            <a
+              href="https://vk.com/id6430817"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Вконтакте</a
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card bg-green">
+        <h3>Мои хобби</h3>
+        <ol>
+          <li>Путешествия</li>
+          <li>Программирование</li>
+          <li>Строительство</li>
+        </ol>
+      </div>
+      <div class="card bg-red">
+        <h3>Опыт работы</h3>
+        <table>
+          <thead>
+            <th>Название организации</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </thead>
 
-      <tbody>
-        <tr>
-          <td>ОАО Каменскволокно</td>
-          <td>инженер-администратор, инженер-программист</td>
-          <td>2006-2008</td>
-        </tr>
-        <tr>
-          <td>ООО Газпром трансгаз-Кубань</td>
-          <td>инженер-электроник 1 категории</td>
-          <td>2008-2013</td>
-        </tr>
-        <tr>
-          <td>ООО Газпром трансгаз Краснодар</td>
-          <td>инженер-программист 1 категории</td>
-          <td>2013-н.в.</td>
-        </tr>
-      </tbody>
-    </table>
+          <tbody>
+            <tr>
+              <td>ОАО Каменскволокно</td>
+              <td>инженер-администратор, инженер-программист</td>
+              <td>2006-2008</td>
+            </tr>
+            <tr>
+              <td>ООО Газпром трансгаз-Кубань</td>
+              <td>инженер-электроник 1 категории</td>
+              <td>2008-2013</td>
+            </tr>
+            <tr>
+              <td>ООО Газпром трансгаз Краснодар</td>
+              <td>инженер-программист 1 категории</td>
+              <td>2013-н.в.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-yellow">
+        <h3>Связаться со мной</h3>
+        <form action="">
+          <div>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+          <div>
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+          <div>
+            <label for="message">Ваше сообщение:</label>
+            <br />
+            <textarea
+              id="message"
+              placeholder="Введите сообщение..."
+              rows="8"
+              cols="30"
+            ></textarea>
+            <div><button type="submit">Отправить!</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

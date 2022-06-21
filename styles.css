@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #0f141e;
+  background: #f1f1f1;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #86898f;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.bg-green {
+  background-color: #e9fee9;
+}
+
+.bg-red {
+  background-color: #fbe6e5;
+}
+.bg-yellow {
+  background-color: #fef8df;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.avatar {
+  width: 200px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+}
