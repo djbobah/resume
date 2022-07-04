@@ -45,20 +45,20 @@
       <hr />
       <div class="card bg-green">
         <h3>Мои хобби</h3>
-        <ol>
+        <ol class="list">
           <li>Путешествия</li>
           <li>Программирование</li>
           <li>Строительство</li>
         </ol>
       </div>
-      <div class="card bg-red">
+      <div class="card bg-yellow">
         <h3>Опыт работы</h3>
-        <table>
-          <thead>
+        <table class="table">
+          <!-- <thead>
             <th>Название организации</th>
             <th>Должность</th>
             <th>Год</th>
-          </thead>
+          </thead> -->
 
           <tbody>
             <tr>
@@ -79,27 +79,30 @@
           </tbody>
         </table>
       </div>
-      <div class="card bg-yellow">
-        <h3>Связаться со мной</h3>
-        <form action="">
-          <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя" />
+      <div class="card">
+        <form action="" class="form">
+          <h3>Связаться со мной</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email" />
+            </div>
           </div>
-          <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email" />
-          </div>
-          <div>
+          <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br />
             <textarea
               id="message"
               placeholder="Введите сообщение..."
               rows="8"
               cols="30"
             ></textarea>
-            <div><button type="submit" class="btn">Отправить!</button></div>
+            <div>
+              <button type="submit" class="btn">Отправить!</button>
+            </div>
           </div>
         </form>
       </div>
